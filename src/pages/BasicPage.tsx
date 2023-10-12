@@ -5,8 +5,8 @@ import {
   HeatMapOutlined,
 } from "@ant-design/icons";
 import classNames from "classnames";
-import Fxcm from "./Fxcm/Fxcm";
-import StockChartPage from "./Stock/StockChartPage";
+import Fxcm from "./fxcm/Fxcm";
+import StockChartPage from "@/pages/stock/StockChartPage";
 
 const BasicPage: React.FC<any> = ({children}) => {
   const [menuIconIndex, setMenuIconIndex] = useState<number>(0); 
