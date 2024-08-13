@@ -5,16 +5,15 @@ import {
   HeatMapOutlined,
 } from "@ant-design/icons";
 import classNames from "classnames";
-import Fxcm from "./fxcm/Fxcm";
-import StockChartPage from "@/pages/stock/StockChartPage";
+import Fxcm from "@pages/Fxcm/Fxcm";
+import StockChartPage from "@/pages/Stock/StockChartPage";
 
 const BasicPage: React.FC<any> = ({children}) => {
   const [menuIconIndex, setMenuIconIndex] = useState<number>(0); 
 
   const renderRightContent=(menuIconIndex:number)=>{
     switch(menuIconIndex){
-      // case 0: return <Fxcm/>
-      case 0: return <StockChartPage/>
+      case 0: return <Fxcm/>
       case 1: return <StockChartPage/>
       case 2: return <div>test 2 page</div>
     }
@@ -25,7 +24,7 @@ const BasicPage: React.FC<any> = ({children}) => {
     <div className="bg-mainpage-bg text-mainpage-font h-full flex flex-col">
       {/* START========================================================================================== [0] Navigator */}
       <div className="bg-mainpage-container h-[38px] shrink-0 min-h-[38px] mb-[4px] pl-[10px] pt-[6px]">
-        TOP Navigator
+        Simi Trading
       </div>
       {/* END  ========================================================================================== [0] Navigator */}
       {/* START========================================================================================== [0] Bottom Box */}

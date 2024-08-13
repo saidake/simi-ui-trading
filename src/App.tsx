@@ -4,8 +4,8 @@ import BasicPage from "@/pages/BasicPage";
 import TestPage from "@/pages/TestPage";
 const App: React.FC<any> = () => {
   return (
-   //<BasicPage/>
-   <TestPage/>
+   <BasicPage/>
+  //  <TestPage/>
   );
 };
 
